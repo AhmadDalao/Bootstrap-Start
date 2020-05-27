@@ -1,0 +1,375 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --white: #ffffff;
+    --primary: #1ABC9C;
+    --secondary: #2c3e50;
+    --form-color: #495057;
+    --submit-color: #1abc9c;
+    --a-background-hover-icon: #f8f9fa;
+    --a-color-hover-icon: #212529;
+    --a-link-hover: #117964;
+    --copyright-color: #1A252F;
+    --margin-bottom: 3rem;
+    --padding-right: 1.5rem;
+    --padding-left: 1.5rem;
+    --padding: 1.5rem;
+    --padding-top: 6rem;
+    --padding-bottom: 6rem;
+    --padding-top-bottom: 6rem 0;
+    --footer-padding: 5rem 0;
+    --max-width: 1140px;
+    --font-size: 1.70rem;
+    --margin-left-right: 1rem;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    padding-left: var(--padding-right);
+    padding-right: var(--padding-right);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.padding-top-bottom {
+    padding: var(--padding-top-bottom);
+}
+
+.center-items {
+    text-align: center;
+    color: var(--white);
+}
+
+.margin-right-line {
+    margin-right: var(--margin-left-right);
+}
+
+.margin-left-line {
+    margin-left: var(--margin-left-right);
+}
+
+.margin-bottom {
+    margin-bottom: var(--margin-bottom);
+}
+
+
+/*
+*
+* navbar 
+*
+*/
+
+.navbar {
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+    font-weight: 700;
+    background-color: var(--secondary);
+}
+
+.navbar-fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-button {
+    display: none;
+}
+
+.navbar .container .logo {
+    font-weight: 700;
+    color: var(--white);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: var(--font-size);
+}
+
+.navbar .navbar-list-container {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar .navbar-list-container ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .navbar-list-container ul li {
+    padding: 1rem 8px 1rem 0;
+}
+
+.navbar .navbar-list-container ul li a {
+    padding: 1rem;
+}
+
+.navbar .navbar-list-container ul li a:hover {
+    color: var(--primary);
+}
+
+
+/*
+*
+* header
+*
+*/
+
+.header {
+    background-color: var(--primary);
+    padding-top: calc(6rem + 112px);
+}
+
+.header .container img {
+    width: 15rem;
+    margin-bottom: var(--margin-bottom);
+}
+
+.header .container .title {
+    font-size: 4rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+}
+
+.break-line {
+    margin: 1.25rem 0 1.5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider-line {
+    width: 100%;
+    max-width: 7rem;
+    height: 0.25rem;
+    background-color: var(--white);
+}
+
+.header .container .head-text {
+    font-size: var(--padding);
+    font-weight: 300;
+    font-family: "Lato", sans-serif;
+}
+
+
+/*
+*
+* portfolio
+*
+*/
+
+.portfolio {
+    color: var(--secondary);
+    text-align: center;
+}
+
+.portfolio .portfolio-h2 {
+    font-size: var(--margin-bottom);
+    text-transform: uppercase;
+}
+
+.portfolio .break-line .divider-line {
+    background-color: var(--secondary);
+}
+
+.portfolio .card-holder {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
+    position: relative;
+}
+
+.portfolio .card-holder .card-item {
+    position: relative;
+    padding-left: var(--padding-left);
+    padding-right: var(--padding-right);
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+}
+
+.portfolio .card-holder .card-item .image-holder {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    max-width: 25rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.portfolio .card-holder .card-item .image-holder img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*
+*
+* about
+*
+*/
+
+.about {
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+}
+
+.about .about-h2 {
+    font-size: var(--margin-bottom);
+    text-transform: uppercase;
+}
+
+
+/*
+*
+* contact
+*
+*/
+
+.contact {
+    color: var(--secondary);
+    text-align: center;
+}
+
+.contact .contact-h2 {
+    font-size: var(--margin-bottom);
+    text-transform: uppercase;
+}
+
+.contact .break-line .divider-line {
+    background-color: var(--secondary);
+}
+
+
+/*
+*
+* footer
+*
+*/
+
+.footer {
+    background-color: var(--secondary);
+}
+
+.footer-padding {
+    padding: var(--footer-padding);
+}
+
+
+/*
+*
+* copyright
+*
+*/
+
+.copyright {
+    background-color: var(--copyright-color);
+    padding-top: var(--padding);
+    padding-bottom: var(--padding);
+    text-align: center;
+}
+
+.copyright p {
+    font-size: 80%;
+    color: var(--white);
+    font-weight: 500;
+    padding: 5px;
+}
+
+
+/*
+*
+*   ============================  media query   ============================
+* 
+*/
+
+
+/*
+*
+*   Extra small devices (phones, 600px and down)
+* 
+*/
+
+@media only screen and (max-width: 600px) {}
+
+
+/*
+*
+*   Small devices (portrait tablets and large phones, 600px and up)
+* 
+*/
+
+@media only screen and (min-width: 600px) {}
+
+
+/*
+*
+*   Medium devices (landscape tablets, 768px and up) The navbar toggle appears at this breakpoint
+* 
+*/
+
+@media only screen and (min-width: 768px) {}
+
+
+/*
+*
+*    the side navbar till here 
+*
+*/
+
+@media only screen and (min-width: 850px) {}
+
+
+/*
+*
+*   Large devices (laptops/desktops, 992px and up)
+* 
+*/
+
+@media only screen and (min-width: 992px) {}
+
+
+/*
+*
+*   tablet size ends here
+* 
+*/
+
+@media screen and (max-device-width: 1024px) {}
+
+
+/*
+*
+*   Extra large devices (large laptops and desktops, 1200px and up)
+* 
+*/
+
+@media screen and (max-device-width: 1200px) {}
