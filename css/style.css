@@ -12,7 +12,7 @@
     --white: #ffffff;
     --primary: #1ABC9C;
     --secondary: #2c3e50;
-    --form-color: #495057;
+    --form-color: #4950576b;
     --submit-color: #1abc9c;
     --a-background-hover-icon: #f8f9fa;
     --a-color-hover-icon: #212529;
@@ -41,6 +41,13 @@ a {
     text-decoration: none;
     font-weight: 700;
     color: var(--white);
+}
+
+label,
+textarea,
+button[type="submit"] {
+    text-transform: capitalize;
+    display: block;
 }
 
 .container {
@@ -329,6 +336,56 @@ a {
     background-color: var(--secondary);
 }
 
+.contact-holder {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
+    position: relative;
+}
+
+.contact-holder .form {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.contact-holder .form>div {
+    margin-left: var(--padding-left);
+    margin-right: var(--padding-right);
+    margin-bottom: var(--margin-left-right);
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type=number],
+textarea,
+button[type="submit"] {
+    padding: 1.75rem;
+    font-size: 1.25rem;
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--a-background-hover-icon);
+    box-shadow: 0.01rem 0.01rem 0.05rem rgba(0, 0, 0, 0.270);
+    /* 0.025rem */
+    color: --var(--form-color);
+}
+
+#my-button {
+    width: initial;
+    padding: 1rem 1.75rem;
+    font-size: 1.25rem;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
+}
+
 
 /*
 *
@@ -410,6 +467,9 @@ a {
     .remove-margin {
         margin-bottom: unset;
     }
+    .contact-holder .form {
+        max-width: 100%;
+    }
 }
 
 
@@ -433,6 +493,9 @@ a {
     .remove-margin {
         margin-bottom: unset;
     }
+    .contact-holder .form {
+        max-width: 100%;
+    }
 }
 
 
@@ -453,7 +516,9 @@ a {
     .remove-margin {
         margin-bottom: unset;
     }
-    /* font-size: 2.4rem; */
+    .contact-holder .form {
+        max-width: 95%;
+    }
 }
 
 
@@ -474,7 +539,9 @@ a {
     .container {
         width: 90vw;
     }
-    /* font-size: 2.5rem; */
+    .contact-holder .form {
+        max-width: 100%;
+    }
 }
 
 
@@ -491,5 +558,8 @@ a {
     }
     .remove-margin {
         margin-bottom: unset;
+    }
+    .contact-holder .form {
+        max-width: 75%;
     }
 }
