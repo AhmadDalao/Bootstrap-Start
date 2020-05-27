@@ -73,6 +73,35 @@ a {
     margin-bottom: var(--margin-bottom);
 }
 
+.margin-left {
+    margin-left: auto;
+}
+
+.margin-right {
+    margin-right: auto;
+}
+
+.custom-flex-max {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+}
+
+.button-custom {
+    padding: 1rem 1.75rem;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    color: var(--a-background-hover-icon);
+    background-color: transparent;
+    border: 0.125rem solid var(--a-background-hover-icon);
+    border-radius: 0.5rem;
+}
+
+.button-custom:hover {
+    color: var(--a-color-hover-icon);
+    background-color: var(--a-background-hover-icon);
+    cursor: pointer;
+}
+
 
 /*
 *
@@ -253,6 +282,30 @@ a {
     text-transform: uppercase;
 }
 
+.button-holder {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.about .container .text-holder {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -1.5rem;
+    margin-left: -1.5rem;
+    position: relative;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.about .container .text-holder>div p {
+    position: relative;
+    margin-left: var(--padding-left);
+    margin-right: var(--padding-right);
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
 
 /*
 *
@@ -407,6 +460,13 @@ a {
 *    the side navbar till here 
 *
 */
+
+@media only screen and (max-width: 850px) {
+    .custom-flex-max {
+        flex: initial;
+        max-width: initial;
+    }
+}
 
 @media only screen and (min-width: 850px) {
     .container {
