@@ -33,6 +33,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
 }
 
 a {
@@ -213,6 +214,11 @@ a {
     padding-right: var(--padding-right);
     flex: 0 0 33.3333333333%;
     max-width: 33.3333333333%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .portfolio .card-holder .card-item .image-holder {
@@ -318,7 +324,38 @@ a {
 * 
 */
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    .navbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar .container .logo {
+        font-size: 1.1rem;
+    }
+    .portfolio .card-holder .card-item {
+        max-width: 100%;
+        flex: 0 0 80%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .margin-bottom-flex {
+        margin-bottom: var(--margin-bottom);
+    }
+    .header .container .title {
+        font-size: 2.8rem;
+    }
+    .portfolio .portfolio-h2,
+    .about .about-h2,
+    .contact .contact-h2 {
+        font-size: 2.25rem;
+    }
+    .remove-margin {
+        margin-bottom: unset;
+    }
+}
 
 
 /*
@@ -327,7 +364,21 @@ a {
 * 
 */
 
-@media only screen and (min-width: 600px) {}
+@media only screen and (min-width: 600px) {
+    .container {
+        width: 90%;
+    }
+    .portfolio .card-holder .card-item {
+        max-width: 50%;
+        flex: 0 0 60%;
+    }
+    .margin-bottom-flex {
+        margin-bottom: var(--margin-bottom);
+    }
+    .remove-margin {
+        margin-bottom: unset;
+    }
+}
 
 
 /*
@@ -336,7 +387,19 @@ a {
 * 
 */
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+    .portfolio .card-holder .card-item {
+        max-width: 100%;
+        flex: 0 0 50%;
+    }
+    .margin-bottom-flex {
+        margin-bottom: var(--margin-bottom);
+    }
+    .remove-margin {
+        margin-bottom: unset;
+    }
+    /* font-size: 2.4rem; */
+}
 
 
 /*
@@ -345,7 +408,12 @@ a {
 *
 */
 
-@media only screen and (min-width: 850px) {}
+@media only screen and (min-width: 850px) {
+    .container {
+        width: 90vw;
+    }
+    /* font-size: 2.5rem; */
+}
 
 
 /*
@@ -354,22 +422,12 @@ a {
 * 
 */
 
-@media only screen and (min-width: 992px) {}
-
-
-/*
-*
-*   tablet size ends here
-* 
-*/
-
-@media screen and (max-device-width: 1024px) {}
-
-
-/*
-*
-*   Extra large devices (large laptops and desktops, 1200px and up)
-* 
-*/
-
-@media screen and (max-device-width: 1200px) {}
+@media only screen and (min-width: 992px) {
+    .portfolio .card-holder .card-item {
+        flex: 0 0 33.3333333333%;
+        max-width: 33.3333333333%;
+    }
+    .remove-margin {
+        margin-bottom: unset;
+    }
+}
