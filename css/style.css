@@ -681,6 +681,12 @@ button[type="submit"] {
     }
     .navbar .navbar-list-container ul {
         display: flex;
+        width: initial;
+    }
+    .navbar .navbar-list-container ul.active {
+        margin-top: initial;
+        width: inherit;
+        display: flex;
     }
     .navbar .navbar-list-container ul li {
         margin: 0;
