@@ -288,9 +288,30 @@ button[type="submit"] {
     overflow: hidden;
 }
 
+.card-item .image-holder .show-me {
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    top: 50%;
+    left: -50%;
+    color: var(--a-background-hover-icon);
+    background-color: var(--primary);
+    font-size: var(--padding-top);
+    margin: auto 0;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    transition: left .5s ease-in-out;
+}
+
 .portfolio .card-holder .card-item .image-holder img {
     max-width: 100%;
     height: auto;
+}
+
+.portfolio .card-holder .card-item .image-holder:hover .show-me {
+    left: 50%;
 }
 
 
