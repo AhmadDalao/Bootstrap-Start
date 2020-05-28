@@ -153,6 +153,7 @@ button[type="submit"] {
     top: 15px;
     right: 20px;
     z-index: 5;
+    cursor: pointer;
 }
 
 .navbar .container .logo {
@@ -178,10 +179,9 @@ button[type="submit"] {
     display: block;
 }
 
-
-/* .navbar .navbar-list-container ul li {
-    padding: 1rem 8px 1rem 0;
-} */
+.navbar .navbar-list-container ul li {
+    margin: 1rem 8px 1rem 0;
+}
 
 .navbar .navbar-list-container ul li a {
     padding: 1rem;
@@ -680,6 +680,9 @@ button[type="submit"] {
     }
     .navbar .navbar-list-container ul {
         display: flex;
+    }
+    .navbar .navbar-list-container ul li {
+        margin: 0;
     }
     .navbar .navbar-list-container ul li a {
         display: flex;
