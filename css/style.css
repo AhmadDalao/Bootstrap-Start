@@ -175,6 +175,7 @@ button[type="submit"] {
 }
 
 .navbar .navbar-list-container ul.active {
+    margin-top: .7rem;
     width: 100%;
     display: block;
 }

@@ -1,13 +1,10 @@
-let navbarList = document.querySelector(".navbar-list");
-
 function myFunction() {
-    if (navbarList.className === "navbar-list") {
-        navbarList.classList.toggle("active");
-        // navbarList.style.transition = "all .5s easy-in-out";
+    var x = document.getElementById("navbar-list");
+    if (x.className === "navbar-list") {
+        x.classList.add("active");
+        console.log(x.className + "inside the function if true do me");
     } else {
-        navbarList.classList.toggle("active");
-        // navbarList.style.transition = "all .5s easy-in-out";
-
+        x.classList.remove("active");
+        console.log(x.className + "inside the function am from else");
     }
-
 }
