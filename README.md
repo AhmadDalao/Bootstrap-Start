@@ -9,6 +9,6 @@
 
 
 <br>
-    <img src="https://raw.githubusercontent.com/AhmadDalao/Bootstrap-Start/master/images/landing.png" height="600" width="800"/>
+    <img src="https://raw.githubusercontent.com/AhmadDalao/Bootstrap-Start/master/image/landing.png" height="600" width="800"/>
 <br>
 
