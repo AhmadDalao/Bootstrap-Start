@@ -6,6 +6,7 @@
     -moz-box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -41,6 +42,10 @@ a {
     text-decoration: none;
     font-weight: 700;
     color: var(--white);
+}
+
+.custom-transition {
+    transition: all 0.3s ease-in-out;
 }
 
 label,
@@ -132,41 +137,56 @@ button[type="submit"] {
 }
 
 .navbar .container {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
 }
 
 .navbar-button {
-    display: none;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem 1.75rem;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    z-index: 5;
 }
 
 .navbar .container .logo {
     font-weight: 700;
     color: var(--white);
-    padding-top: 7px;
-    padding-bottom: 7px;
     font-size: var(--font-size);
 }
 
 .navbar .navbar-list-container {
-    display: flex;
+    display: block;
     flex-grow: 1;
     justify-content: flex-end;
     align-items: center;
 }
 
 .navbar .navbar-list-container ul {
-    display: flex;
+    display: none;
     list-style: none;
 }
 
-.navbar .navbar-list-container ul li {
-    padding: 1rem 8px 1rem 0;
+.navbar .navbar-list-container ul.active {
+    width: 100%;
+    display: block;
 }
+
+
+/* .navbar .navbar-list-container ul li {
+    padding: 1rem 8px 1rem 0;
+} */
 
 .navbar .navbar-list-container ul li a {
     padding: 1rem;
+    display: block;
+    text-align: center;
 }
 
 .navbar .navbar-list-container ul li a:hover {
@@ -452,6 +472,10 @@ button[type="submit"] {
     text-transform: capitalize;
 }
 
+.footer-p .about-freelance:hover {
+    color: var(--primary);
+}
+
 .footer .footer-item-holder .social-holder {
     text-align: center;
     margin-top: 1.25rem;
@@ -513,12 +537,16 @@ button[type="submit"] {
 
 @media only screen and (max-width: 600px) {
     .navbar .container {
-        display: flex;
+        display: block;
         align-items: center;
         justify-content: space-between;
     }
     .navbar .container .logo {
         font-size: 1.1rem;
+    }
+    .navbar-button {
+        padding: 1rem 1.0rem;
+        top: 8px;
     }
     .portfolio .card-holder .card-item {
         max-width: 100%;
@@ -552,6 +580,12 @@ button[type="submit"] {
 */
 
 @media only screen and (min-width: 600px) {
+    .navbar .container .logo {
+        font-size: var(--font-size);
+    }
+    .navbar-button {
+        top: 15px;
+    }
     .container {
         width: 90%;
     }
@@ -616,6 +650,22 @@ button[type="submit"] {
     }
     .contact-holder .form {
         max-width: 100%;
+    }
+    .navbar .container {
+        display: flex;
+    }
+    .navbar .navbar-list-container {
+        display: flex;
+    }
+    .navbar .navbar-list-container ul {
+        display: flex;
+    }
+    .navbar .navbar-list-container ul li a {
+        display: flex;
+        text-align: center;
+    }
+    .navbar-button {
+        display: none;
     }
 }
 

@@ -21,12 +21,12 @@
     <nav class="navbar navbar-fixed " id="navbar">
         <div class="container ">
             <a class="logo" href="#">Start Bootstrap</a>
-            <button class="toggle navbar-button">Menu <i class="fas fa-bars"></i></button>
-            <div class="navbar-list-container">
-                <ul class="navbar-list">
-                    <li><a aria-label="About" href="#portfolio">portfolio</a></li>
-                    <li><a aria-label="About" href="#about">About</a></li>
-                    <li><a aria-label="About" href="#contact">contact</a></li>
+            <button onclick="myFunction()" id="navbar-button" class="toggle navbar-button">Menu <i class="fas fa-bars"></i></button>
+            <div class="navbar-list-container ">
+                <ul class="navbar-list ">
+                    <li><a class="custom-transition" aria-label="About" href="#portfolio">portfolio</a></li>
+                    <li><a class="custom-transition" aria-label="About" href="#about">About</a></li>
+                    <li><a class="custom-transition" aria-label="About" href="#contact">contact</a></li>
                 </ul>
             </div>
         </div>
@@ -129,7 +129,7 @@
                 </div>
             </div>
             <div class="button-holder">
-                <button class="button-custom "><i class="fas fa-download"></i> Free Download!</button>
+                <button class="button-custom custom-transition"><i class="fas fa-download"></i> Free Download!</button>
             </div>
         </div>
     </section>
@@ -156,7 +156,6 @@
                     <div class="form-email-holder">
                         <label for="email" hidden></label>
                         <input type="email" max="35" name="email" id="email" placeholder="Email Address">
-
                     </div>
                     <div class="form-phone-holder">
                         <label for="phone" hidden></label>
@@ -166,9 +165,8 @@
                         <label for="message" hidden></label>
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
                     </div>
-
                     <div class="form-button-holder">
-                        <button id="my-button" type="submit" aria-label="Send" class="button-submit">send</button>
+                        <button id="my-button" type="submit" aria-label="Send" class="button-submit custom-transition">send</button>
                     </div>
 
                 </form>
@@ -191,13 +189,12 @@
                 <div class="footer-item margin-bottom">
                     <h4 class="footer-item-title">
                         AROUND THE WEB
-
                     </h4>
                     <div class="social-holder">
-                        <a class="social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="social" href=""><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social" href=""><i class="fab fa-dribbble"></i></a>
+                        <a class="social custom-transition" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="social custom-transition" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="social custom-transition" href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social custom-transition" href=""><i class="fab fa-dribbble"></i></a>
 
                     </div>
 
