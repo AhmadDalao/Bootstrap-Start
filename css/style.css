@@ -295,7 +295,7 @@ button[type="submit"] {
     align-items: center;
     display: flex;
     height: 100%;
-    top: 50%;
+    top: 48%;
     left: -50%;
     color: var(--a-background-hover-icon);
     background-color: var(--primary);
