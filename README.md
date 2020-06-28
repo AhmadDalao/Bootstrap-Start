@@ -9,10 +9,7 @@
 
 
 <br>
-    <img src="https://raw.githubusercontent.com/AhmadDalao/Bootstrap-Start/master/image/landing.png" height="600" width="1000"/>
+    <img src="https://raw.githubusercontent.com/AhmadDalao/Bootstrap-Start/master/image/bootstrap_start.png"  width="1000"/>
 <br>
 
 
-<br>
-    <img src="https://raw.githubusercontent.com/AhmadDalao/Bootstrap-Start/master/image/landing2.png" height="600" width="1000"/>
-<br>
