@@ -405,16 +405,22 @@ textarea::placeholder {
     .header .container .title {
         font-size: 2.8rem;
     }
-    .portfolio__h2,
-    .about__h2,
-    .contact__h2 {
-        font-size: 2.25rem;
+    .header {
+        padding-top: calc(6rem + 20px);
+    }
+    .header__image {
+        width: 12rem;
+    }
+    .header__title {
+        font-size: 1.9rem;
     }
     .contact-holder .form {
         max-width: 100%;
     }
-    .header__title {
-        font-size: 2.8rem;
+    .portfolio__h2,
+    .about__h2,
+    .contact__h2 {
+        font-size: 2.25rem;
     }
 }
 
