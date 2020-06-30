@@ -55,22 +55,8 @@ button[type="submit"] {
     display: block;
 }
 
-.container {
-    width: 100%;
-    max-width: var(--max-width);
-    padding-left: var(--padding-right);
-    padding-right: var(--padding-right);
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .padding-top-bottom {
     padding: var(--padding-top-bottom);
-}
-
-.center-items {
-    text-align: center;
-    color: var(--white);
 }
 
 .margin-right-line {
@@ -79,25 +65,6 @@ button[type="submit"] {
 
 .margin-left-line {
     margin-left: var(--margin-left-right);
-}
-
-.margin-bottom {
-    margin-bottom: var(--margin-bottom);
-}
-
-.margin-left {
-    margin-left: auto;
-}
-
-.margin-right {
-    margin-right: auto;
-}
-
-.custom-flex-max {
-    /* flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%; */
-    flex: 0 0 45%;
-    max-width: 45%;
 }
 
 .button-custom {
@@ -119,99 +86,49 @@ button[type="submit"] {
 
 /*
 *
-* navbar 
+* ============================  navbar  ============================
 *
 */
 
 .navbar {
-    padding-top: var(--padding);
-    padding-bottom: var(--padding);
     font-weight: 700;
+    color: var(--white);
     background-color: var(--secondary);
 }
 
-.navbar-fixed {
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-}
-
-.navbar .container {
-    display: block;
-    align-items: center;
-    justify-content: center;
-}
-
-.navbar-button {
+.navbar-toggler {
     background-color: var(--primary);
     color: var(--white);
     border: none;
     border-radius: .5rem;
-    padding: 1rem 1.75rem;
+    padding: .5rem 1rem;
     font-size: 1.25rem;
-    position: absolute;
-    top: 15px;
     right: 20px;
-    z-index: 5;
-    cursor: pointer;
 }
 
 .navbar .container .logo {
-    font-weight: 700;
-    color: var(--white);
     font-size: var(--font-size);
-}
-
-.navbar .navbar-list-container {
-    display: block;
-    flex-grow: 1;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.navbar .navbar-list-container ul {
-    display: none;
-    list-style: none;
-}
-
-.navbar .navbar-list-container ul.active {
-    margin-top: .7rem;
-    width: 100%;
-    display: block;
-}
-
-.navbar .navbar-list-container ul li {
-    margin: 1rem 8px 1rem 0;
-}
-
-.navbar .navbar-list-container ul li a {
-    padding: 1rem;
-    display: block;
-    text-align: center;
-}
-
-.navbar .navbar-list-container ul li a:hover {
-    color: var(--primary);
 }
 
 
 /*
 *
-* header
+* ============================  header  ============================
 *
 */
 
 .header {
     background-color: var(--primary);
     padding-top: calc(6rem + 112px);
+    color: var(--white);
 }
 
-.header .container img {
+.header__image {
     width: 15rem;
     margin-bottom: var(--margin-bottom);
 }
 
-.header .container .title {
+.header__title {
     font-size: 4rem;
     line-height: 3.5rem;
     text-transform: uppercase;
@@ -232,7 +149,7 @@ button[type="submit"] {
     background-color: var(--white);
 }
 
-.header .container .head-text {
+.header__text {
     font-size: var(--padding);
     font-weight: 300;
     font-family: "Lato", sans-serif;
@@ -241,61 +158,36 @@ button[type="submit"] {
 
 /*
 *
-* portfolio
+* ============================  portfolio  ============================
 *
 */
 
 .portfolio {
     color: var(--secondary);
-    text-align: center;
 }
 
-.portfolio .portfolio-h2 {
+.portfolio__h2 {
     font-size: var(--margin-bottom);
-    text-transform: uppercase;
 }
 
 .portfolio .break-line .divider-line {
     background-color: var(--secondary);
 }
 
-.portfolio .card-holder {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -1.5rem;
-    margin-left: -1.5rem;
-    position: relative;
-}
-
-.portfolio .card-holder .card-item {
-    position: relative;
-    padding-left: var(--padding-left);
-    padding-right: var(--padding-right);
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.portfolio .card-holder .card-item .image-holder {
+.card__image {
     cursor: pointer;
     position: relative;
-    display: block;
-    max-width: 25rem;
     border-radius: 0.5rem;
     overflow: hidden;
 }
 
-.card-item .image-holder .show-me {
+.card__image .card__overlay {
     position: absolute;
     width: 100%;
     align-items: center;
     display: flex;
     height: 100%;
-    top: 48%;
+    top: 50%;
     left: -50%;
     color: var(--a-background-hover-icon);
     background-color: var(--primary);
@@ -306,63 +198,37 @@ button[type="submit"] {
     transition: left .5s ease-in-out;
 }
 
-.portfolio .card-holder .card-item .image-holder img {
-    max-width: 100%;
-    height: auto;
-}
-
-.portfolio .card-holder .card-item .image-holder:hover .show-me {
+.card__image:hover .card__overlay {
     left: 50%;
 }
 
 
 /*
 *
-* about
+* ============================  about  ============================
 *
 */
 
 .about {
     background-color: var(--primary);
     color: var(--white);
-    text-align: center;
 }
 
-.about .about-h2 {
+.about__h2 {
     font-size: var(--margin-bottom);
-    text-transform: uppercase;
 }
 
-.button-holder {
-    margin-top: 1.5rem;
-    text-align: center;
-}
-
-.about .container .text-holder {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -1.5rem;
-    margin-left: -1.5rem;
-    position: relative;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.about .container .text-holder>div p {
-    position: relative;
-    margin-left: var(--padding-left);
-    margin-right: var(--padding-right);
-    margin-bottom: 1rem;
+.about__p {
     font-weight: 300;
     font-size: 1.25rem;
     text-align: justify;
-    word-break: break-all;
+    /* word-break: break-all; */
 }
 
 
 /*
 *
-* contact
+* ============================  contact  ============================
 *
 */
 
@@ -371,9 +237,8 @@ button[type="submit"] {
     text-align: center;
 }
 
-.contact .contact-h2 {
+.contact__h2 {
     font-size: var(--margin-bottom);
-    text-transform: uppercase;
 }
 
 .contact .break-line .divider-line {
@@ -454,73 +319,37 @@ textarea::placeholder {
 
 /*
 *
-* footer
+*  ============================  footer ============================
 *
 */
 
 .footer {
     background-color: var(--secondary);
-}
-
-.footer-padding {
     padding: var(--footer-padding);
 }
 
-.footer .container .footer-item-holder {
-    display: block;
-    flex-wrap: wrap;
-    margin-right: -1.5rem;
-    margin-left: -1.5rem;
-    position: relative;
-}
-
-.footer .footer-item-holder .footer-item {
-    position: relative;
-    padding-left: var(--padding-left);
-    padding-right: var(--padding-right);
-    flex: 0 0 33.3333333333%;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.footer-item>h4 {
-    text-align: center;
+.footer__title {
     font-size: 1.24rem;
-    text-transform: uppercase;
-    padding-left: var(--padding-left);
-    padding-right: var(--padding-right);
     color: white;
 }
 
-.footer-item>p {
+.footer__p {
     font-size: 1rem;
     font-weight: 300;
     color: white;
-    padding-left: var(--padding-left);
-    padding-right: var(--padding-right);
-    text-align: center;
-    margin-top: 1.25rem;
 }
 
-.footer-p .about-freelance {
-    color: var( --a-link-hover);
-    text-transform: capitalize;
+.footer__a {
+    color: var( --a-link-hover) !important;
 }
 
-.footer-p .about-freelance:hover {
-    color: var(--primary);
+.footer__a:hover,
+.navbar__a:hover {
+    color: var(--primary) !important;
+    text-decoration: none;
 }
 
-.footer .footer-item-holder .social-holder {
-    text-align: center;
-    margin-top: 1.25rem;
-}
-
-.footer .footer-item-holder .social {
+.social {
     border-radius: 50%;
     border: 1.5px solid var(--a-background-hover-icon);
     display: inline-flex;
@@ -534,7 +363,7 @@ textarea::placeholder {
     margin: 3px;
 }
 
-.footer .footer-item-holder .social:hover {
+.social:hover {
     background-color: var(--a-background-hover-icon);
     color: var(--a-color-hover-icon);
 }
@@ -542,22 +371,16 @@ textarea::placeholder {
 
 /*
 *
-* copyright
+*  ============================ copyright ============================
 *
 */
 
 .copyright {
     background-color: var(--copyright-color);
-    padding-top: var(--padding);
-    padding-bottom: var(--padding);
-    text-align: center;
 }
 
-.copyright p {
-    font-size: 80%;
+.copyright__p {
     color: var(--white);
-    font-weight: 500;
-    padding: 5px;
 }
 
 
@@ -574,12 +397,7 @@ textarea::placeholder {
 * 
 */
 
-@media only screen and (max-width: 600px) {
-    .navbar .container {
-        display: block;
-        align-items: center;
-        justify-content: space-between;
-    }
+@media only screen and (max-width: 576px) {
     .navbar .container .logo {
         font-size: 1.1rem;
     }
@@ -587,23 +405,12 @@ textarea::placeholder {
         padding: 1rem 1.0rem;
         top: 8px;
     }
-    .portfolio .card-holder .card-item {
-        max-width: 100%;
-        flex: 0 0 80%;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-        align-items: center;
-    }
-    .margin-bottom-flex {
-        margin-bottom: var(--margin-bottom);
-    }
     .header .container .title {
         font-size: 2.8rem;
     }
-    .portfolio .portfolio-h2,
-    .about .about-h2,
-    .contact .contact-h2 {
+    .portfolio__h2,
+    .about__h2,
+    .contact__h2 {
         font-size: 2.25rem;
     }
     .contact-holder .form {
@@ -618,31 +425,12 @@ textarea::placeholder {
 * 
 */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 576px) {
     .navbar .container .logo {
         font-size: var(--font-size);
     }
-    .navbar-button {
-        top: 15px;
-    }
-    .container {
-        width: 90%;
-    }
-    .portfolio .card-holder .card-item {
-        max-width: 50%;
-        flex: 0 0 60%;
-    }
-    .margin-bottom-flex {
-        margin-bottom: var(--margin-bottom);
-    }
-    .remove-margin {
-        margin-bottom: unset;
-    }
     .contact-holder .form {
         max-width: 100%;
-    }
-    .remove-margin {
-        margin-bottom: unset;
     }
 }
 
@@ -654,16 +442,6 @@ textarea::placeholder {
 */
 
 @media only screen and (min-width: 768px) {
-    .portfolio .card-holder .card-item {
-        max-width: 100%;
-        flex: 0 0 50%;
-    }
-    .margin-bottom-flex {
-        margin-bottom: var(--margin-bottom);
-    }
-    .remove-margin {
-        margin-bottom: unset;
-    }
     .contact-holder .form {
         max-width: 95%;
     }
@@ -676,44 +454,9 @@ textarea::placeholder {
 *
 */
 
-@media only screen and (max-width: 850px) {
-    .custom-flex-max {
-        flex: initial;
-        max-width: initial;
-    }
-}
-
 @media only screen and (min-width: 850px) {
-    .container {
-        width: 90vw;
-    }
     .contact-holder .form {
         max-width: 100%;
-    }
-    .navbar .container {
-        display: flex;
-    }
-    .navbar .navbar-list-container {
-        display: flex;
-    }
-    .navbar .navbar-list-container ul {
-        display: flex;
-        width: initial;
-    }
-    .navbar .navbar-list-container ul.active {
-        margin-top: initial;
-        width: inherit;
-        display: flex;
-    }
-    .navbar .navbar-list-container ul li {
-        margin: 0;
-    }
-    .navbar .navbar-list-container ul li a {
-        display: flex;
-        text-align: center;
-    }
-    .navbar-button {
-        display: none;
     }
 }
 
@@ -725,20 +468,7 @@ textarea::placeholder {
 */
 
 @media only screen and (min-width: 992px) {
-    .portfolio .card-holder .card-item {
-        flex: 0 0 33.3333333333%;
-        max-width: 33.3333333333%;
-    }
-    .remove-margin {
-        margin-bottom: unset;
-    }
     .contact-holder .form {
         max-width: 75%;
-    }
-    .footer .footer-item-holder .footer-item {
-        max-width: 33.3333333333%;
-    }
-    .footer .container .footer-item-holder {
-        display: flex;
     }
 }

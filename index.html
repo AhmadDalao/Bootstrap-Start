@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <!--  link css file -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="description" content=" Bootstrap  Start is a landing page to host your portfolio projects.">
 
@@ -20,15 +22,17 @@
 
 <body>
     <!-- Navigation bar -->
-    <nav class="navbar navbar-fixed " id="navbar">
-        <div class="container ">
-            <a class="logo" href="#">Start Bootstrap</a>
-            <button onclick="myFunction()" id="navbar-button" class="toggle navbar-button">Menu <i class="fas fa-bars"></i></button>
-            <div class="navbar-list-container ">
-                <ul class="navbar-list" id="navbar-list">
-                    <li><a onclick="myFunction()" class="custom-transition" aria-label="About" href="#portfolio">portfolio</a></li>
-                    <li><a onclick="myFunction()" class="custom-transition" aria-label="About" href="#about">About</a></li>
-                    <li><a onclick="myFunction()" class="custom-transition" aria-label="About" href="#contact">contact</a></li>
+    <nav class="navbar navbar-expand-sm  fixed-top" id="myNav">
+        <div class="container">
+            <a class=" navbar-brand text-uppercase py-3 navbar__a custom-transition" href="index.html">Start Bootstrap</a>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">Menu
+            <i class="fas fa-bars navbar-toggler-icon"></i>
+            </button>
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto  ">
+                    <li class=" text-capitalize nav-link" data-target=".navbar-collapse.show" data-toggle="collapse"> <a href="#portfolio" class=" py-2 mx-2 navbar__a custom-transition">portfolio</a></li>
+                    <li class=" text-capitalize nav-link" data-target=".navbar-collapse.show" data-toggle="collapse"> <a href="#about" class=" py-2 mx-2 navbar__a custom-transition">about</a> </li>
+                    <li class=" text-capitalize  nav-link" data-target=".navbar-collapse.show" data-toggle="collapse"> <a href="#contact" class=" py-2 mx-2 navbar__a custom-transition">contact</a></li>
                 </ul>
             </div>
         </div>
@@ -37,9 +41,9 @@
 
     <!-- header  -->
     <header class="header padding-top-bottom" id="header">
-        <div class="container center-items">
-            <img src="image/avataaars.svg" alt="boy-image">
-            <h1 class="title">Start Bootstrap</h1>
+        <div class="container text-center">
+            <img class="header__image" src="image/avataaars.svg" alt="boy-image">
+            <h1 class="header__title">Start Bootstrap</h1>
             <div class="break-line">
                 <div class="divider-line margin-right-line"></div>
                 <div class="divider-star">
@@ -47,16 +51,16 @@
                 </div>
                 <div class="divider-line margin-left-line"></div>
             </div>
-            <p class="head-text">Graphic Artist - Web Designer - Illustrator
+            <p class="header__text">Graphic Artist - Web Designer - Illustrator
             </p>
         </div>
     </header>
     <!-- end header  -->
 
     <!-- Portfolio Section-->
-    <section class="portfolio padding-top-bottom" id="portfolio">
+    <section class="portfolio padding-top-bottom text-center" id="portfolio">
         <div class="container">
-            <h2 class="portfolio-h2">Portfolio</h2>
+            <h2 class="portfolio__h2 text-uppercase">Portfolio</h2>
             <div class="break-line">
                 <div class="divider-line margin-right-line"></div>
                 <div class="divider-star">
@@ -64,60 +68,59 @@
                 </div>
                 <div class="divider-line margin-left-line"></div>
             </div>
-
-            <div class="card-holder">
+            <div class="row justify-content-center align-items-center mt-5">
                 <!-- card 1 one -->
-                <div class="card-item margin-bottom">
-                    <div class="image-holder ">
-                        <div class="show-me">
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4 ">
+                    <div class="card__image ">
+                        <div class="card__overlay">
                             <i class="fas fa-plus"></i>
                         </div>
-                        <img src="image/cabin.png" alt="cabin image">
+                        <img class="img-fluid" src="image/cabin.png" alt="cabin image">
                     </div>
                 </div>
                 <!-- card 2 one -->
-                <div class="card-item margin-bottom">
-                    <div class="image-holder">
-                        <div class="show-me">
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4 ">
+                    <div class="card__image">
+                        <div class="card__overlay">
                             <i class="fas fa-plus"></i>
                         </div>
-                        <img src="image/cake.png" alt="cabin image">
+                        <img class="img-fluid" src="image/cake.png" alt="cabin image">
                     </div>
                 </div>
                 <!-- card 3 one -->
-                <div class="card-item margin-bottom">
-                    <div class="image-holder">
-                        <div class="show-me">
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card__image">
+                        <div class="card__overlay">
                             <i class="fas fa-plus"></i>
                         </div>
-                        <img src="image/circus.png" alt="cabin image">
+                        <img class="img-fluid" src="image/circus.png" alt="cabin image">
                     </div>
                 </div>
                 <!-- card 4 one -->
-                <div class="card-item margin-bottom-flex remove-margin">
-                    <div class="image-holder">
-                        <div class="show-me">
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card__image">
+                        <div class="card__overlay">
                             <i class="fas fa-plus"></i>
                         </div>
-                        <img src="image/game.png" alt="cabin image">
+                        <img class="img-fluid" src="image/game.png" alt="cabin image">
                     </div>
                 </div>
                 <!-- card 5 one -->
-                <div class="card-item margin-bottom-flex remove-margin">
-                    <div class="image-holder">
-                        <div class="show-me">
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card__image">
+                        <div class="card__overlay">
                             <i class="fas fa-plus"></i>
                         </div>
-                        <img src="image/safe.png" alt="cabin image">
+                        <img class="img-fluid" src="image/safe.png" alt="cabin image">
                     </div>
                 </div>
                 <!-- card 6 one -->
-                <div class="card-item ">
-                    <div class="image-holder">
-                        <div class="show-me">
+                <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card__image">
+                        <div class="card__overlay">
                             <i class="fas fa-plus"></i>
                         </div>
-                        <img src="image/submarine.png" alt="cabin image">
+                        <img class="img-fluid" src="image/submarine.png" alt="cabin image">
                     </div>
                 </div>
             </div>
@@ -126,9 +129,9 @@
     <!-- end Portfolio Section-->
 
     <!-- About Section-->
-    <section class="about padding-top-bottom" id="about">
+    <section class="about padding-top-bottom text-center" id="about">
         <div class="container">
-            <h2 class="about-h2">About</h2>
+            <h2 class="about__h2 text-uppercase">About</h2>
             <div class="break-line">
                 <div class="divider-line margin-right-line"></div>
                 <div class="divider-star">
@@ -136,19 +139,17 @@
                 </div>
                 <div class="divider-line margin-left-line"></div>
             </div>
-
-            <div class="text-holder">
-                <div class="margin-left custom-flex-max ">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
+            <div class="row text-center mt-4 justify-content-center">
+                <div class=" col-sm-12 col-lg-6  text-left  px-5 mt-3">
+                    <p class="mb-3 lead about__p"> Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.
                     </p>
                 </div>
-                <div class="margin-right custom-flex-max">
-                    <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
-
+                <div class=" col-sm-12 col-lg-6  text-left   px-5  mt-3">
+                    <p class="mb-3 lead about__p">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!
                     </p>
                 </div>
             </div>
-            <div class="button-holder">
+            <div class="button__holder  mt-3">
                 <button class="button-custom custom-transition"><i class="fas fa-download"></i> Free Download!</button>
             </div>
         </div>
@@ -158,7 +159,7 @@
     <!-- Contact Section-->
     <section class="contact padding-top-bottom" id="contact">
         <div class="container">
-            <h2 class="contact-h2">contact me</h2>
+            <h2 class="contact__h2 text-uppercase">contact me</h2>
             <div class="break-line">
                 <div class="divider-line margin-right-line"></div>
                 <div class="divider-star">
@@ -199,33 +200,29 @@
     <!-- footer Section-->
     <footer class="footer footer-padding" id="footer">
         <div class="container">
-            <div class="footer-item-holder">
-                <div class="footer-item margin-bottom">
-                    <h4 class="footer-item-title">
+            <div class="row justify-content-center">
+                <div class=" col-sm-12 col-lg-4 mb-4">
+                    <h4 class="footer__title text-center text-uppercase px-4 font-weight-bold">
                         LOCATION
                     </h4>
-                    <p class="footer-p"> 2215 John Daniel Drive Clark, MO 65243</p>
+                    <p class="text-center mt-4 px-4 footer__p"> 2215 John Daniel Drive Clark, MO 65243</p>
                 </div>
-                <div class="footer-item margin-bottom">
-                    <h4 class="footer-item-title">
+                <div class="col-sm-12 col-lg-4 mb-4">
+                    <h4 class="footer__title text-center text-uppercase px-4 font-weight-bold">
                         AROUND THE WEB
                     </h4>
-                    <div class="social-holder">
+                    <div class="text-center mt-4">
                         <a class="social custom-transition" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="social custom-transition" href=""><i class="fab fa-twitter"></i></a>
                         <a class="social custom-transition" href=""><i class="fab fa-linkedin-in"></i></a>
                         <a class="social custom-transition" href=""><i class="fab fa-dribbble"></i></a>
-
                     </div>
-
-                    <!-- <p class="footer-p"> 2215 John Daniel Drive Clark, MO 65243</p> -->
-
                 </div>
-                <div class="footer-item">
-                    <h4 class="footer-item-title">
+                <div class=" col-sm-12 col-lg-4 ">
+                    <h4 class="footer__title text-center text-uppercase px-4 font-weight-bold">
                         ABOUT FREELANCER
                     </h4>
-                    <p class="footer-p"> Freelance is a free to use, MIT licensed Bootstrap theme created by <a href="#" class="about-freelance">Start Bootstrap.</a>
+                    <p class="text-center mt-4 px-4 footer__p"> Freelance is a free to use, MIT licensed Bootstrap theme created by <a href="#" class="footer__a text-capitalize custom-transition">Start Bootstrap.</a>
                     </p>
                 </div>
             </div>
@@ -234,13 +231,16 @@
     <!-- end Section-->
 
     <!-- copyright Section-->
-    <section class="copyright">
+    <section class="copyright py-4  text-center">
         <div class="container">
-            <p>Copyright © AhmadDalao 2020</p>
+            <p class="m-0 copyright__p">Copyright © AhmadDalao 2020</p>
         </div>
     </section>
     <!-- end Section-->
-
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src=" js/index.js "></script>
 </body>
 
