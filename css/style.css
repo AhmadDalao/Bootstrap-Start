@@ -119,7 +119,7 @@ button[type="submit"] {
 
 .header {
     background-color: var(--primary);
-    padding-top: calc(6rem + 112px);
+    padding-top: calc(6rem + 80px);
     color: var(--white);
 }
 
