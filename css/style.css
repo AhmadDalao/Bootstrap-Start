@@ -221,7 +221,7 @@ button[type="submit"] {
 .about__p {
     font-weight: 300;
     font-size: 1.25rem;
-    text-align: justify;
+    text-align: left;
     /* word-break: break-all; */
 }
 
@@ -248,8 +248,6 @@ button[type="submit"] {
 .contact-holder {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -1.5rem;
-    margin-left: -1.5rem;
     position: relative;
 }
 
@@ -261,10 +259,9 @@ button[type="submit"] {
 }
 
 .contact-holder .form>div {
-    margin-left: var(--padding-left);
-    margin-right: var(--padding-right);
     margin-bottom: var(--margin-left-right);
     text-align: left;
+    margin: 0 1.5rem;
 }
 
 input[type="text"],
@@ -416,6 +413,9 @@ textarea::placeholder {
     .contact-holder .form {
         max-width: 100%;
     }
+    .header__title {
+        font-size: 2.8rem;
+    }
 }
 
 
@@ -427,7 +427,7 @@ textarea::placeholder {
 
 @media only screen and (min-width: 576px) {
     .navbar .container .logo {
-        font-size: var(--font-size);
+        font-size: 1.25rem;
     }
     .contact-holder .form {
         max-width: 100%;
@@ -457,6 +457,9 @@ textarea::placeholder {
 @media only screen and (min-width: 850px) {
     .contact-holder .form {
         max-width: 100%;
+    }
+    .navbar .container .logo {
+        font-size: 1.50rem;
     }
 }
 
