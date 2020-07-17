@@ -8,3 +8,13 @@ function myFunction() {
         console.log(x.className + "inside the function am from else");
     }
 }
+
+// loading screen
+
+$(window).on("load", function() {
+    $(".loading__title , .spinner-container").fadeOut(99999);
+    $(".loading-screen").fadeOut(400, function() {
+        $("body").css("overflow", "auto");
+        $(this).remove();
+    });
+});
